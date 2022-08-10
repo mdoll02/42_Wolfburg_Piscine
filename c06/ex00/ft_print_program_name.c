@@ -6,7 +6,7 @@
 /*   By: mdoll <mdoll@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/08 16:02:01 by mdoll             #+#    #+#             */
-/*   Updated: 2022/08/10 10:53:45 by mdoll            ###   ########.fr       */
+/*   Updated: 2022/08/10 15:17:48 by mdoll            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	ft_pustr(char *str)
 		write (1, &str[i], 1);
 		i++;
 	}
+	write (1, "\n", 1);
 }
 
 int	main(int argc, char **argv)
