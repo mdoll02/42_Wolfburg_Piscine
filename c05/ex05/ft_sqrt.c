@@ -6,7 +6,7 @@
 /*   By: mdoll <mdoll@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/10 10:43:41 by mdoll             #+#    #+#             */
-/*   Updated: 2022/08/11 11:48:20 by mdoll            ###   ########.fr       */
+/*   Updated: 2022/08/11 13:25:45 by mdoll            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,12 @@ int	ft_sqrt(int nb)
 	i = 1;
 	if (nb <= 0)
 		return (0);
-	while (i * i != nb && i < 46340)
+	while (i * i != nb)
 	{
 		i++;
 		if (nb / 2 <= i)
+			return (0);
+		if (i > 46340)
 			return (0);
 	}
 	return (i);
