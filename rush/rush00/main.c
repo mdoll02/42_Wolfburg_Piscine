@@ -1,35 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mdoll <mdoll@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/04 16:07:27 by mdoll             #+#    #+#             */
-/*   Updated: 2022/08/11 17:18:52 by mdoll            ###   ########.fr       */
+/*   Created: 2022/07/23 12:53:35 by kschmidt          #+#    #+#             */
+/*   Updated: 2022/07/24 10:59:50 by mdoll            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_power(int nb, int power)
+#include"rush01.c"
+
+void	rush(int x, int y);
+
+int	main(void)
 {
-	if (nb == 0 && power == 0)
-		return (1);
-	if (power < 0)
-		return (0);
-	if (power == 0)
-		return (1);
-	if (power > 1)
-		nb = nb * ft_recursive_power(nb, power - 1);
-	return (nb);
+	rush(5, 7);
+	return (0);
 }
-
-// #include "stdio.h"
-
-// int	main(void)
-// {
-// 	int	i;
-
-// 	i = 76;
-// 	printf("%d\n", ft_recursive_power(i, 4));
-// 	return (0);
-// }
